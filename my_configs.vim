@@ -1,0 +1,54 @@
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call plug#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plug 'VundleVim/Vundle.vim'
+
+"gruvbox colorscheme
+Plug 'morhetz/gruvbox'
+
+Plug 'kien/ctrlp.vim'
+
+Plug 'scrooloose/nerdtree'
+
+Plug 'itchyny/lightline.vim'
+
+Plug 'neoclide/coc.nvim' , {'branch': 'release'}
+
+Plug 'dense-analysis/ale'
+
+" All of your Plugins must be added before the following line
+call plug#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+" Line numbers
+:set number
+:set relativenumber
+
+" Enable Syntax Highlighting
+syntax on
+
+" GruvBox Colorscheme
+set background=dark
+"autocmd vimenter * colorscheme gruvbox
+colorscheme gruvbox
+
+" Transparency
+hi Normal guibg=NONE ctermbg=NONE
+
+" Indents/Tabs
+set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
