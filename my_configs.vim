@@ -20,6 +20,9 @@ Plug 'neoclide/coc.nvim' , {'branch': 'release'}
 
 Plug 'dense-analysis/ale'
 
+" Disables arrow keys
+Plug 'wikitopian/hardmode'
+
 " All of your Plugins must be added before the following line
 call plug#end()            " required
 filetype plugin indent on    " required
@@ -52,3 +55,8 @@ hi Normal guibg=NONE ctermbg=NONE
 
 " Indents/Tabs
 set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
+
+let g:HardMode_level = 'wannabe'
+let g:HardMode_hardmodeMsg = 'Don''t use this!'
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
