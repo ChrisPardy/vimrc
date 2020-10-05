@@ -58,5 +58,4 @@ set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 let g:HardMode_level = 'wannabe'
 let g:HardMode_hardmodeMsg = 'Don''t use this!'
-autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
