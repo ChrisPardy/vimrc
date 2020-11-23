@@ -69,7 +69,7 @@ source $VIMRUNTIME/menu.vim
 set wildmenu
 
 " Ignore compiled files
-set wildignore=*.o,*~,*.pyc
+set wildignore=*.o,*~,*.pyc,*.d,*.lst
 if has("win16") || has("win32")
     set wildignore+=.git\*,.hg\*,.svn\*
 else
