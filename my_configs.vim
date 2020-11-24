@@ -20,6 +20,9 @@ Plug 'neoclide/coc.nvim' , {'branch': 'release'}
 
 Plug 'dense-analysis/ale'
 
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
 " Disables arrow keys
 Plug 'wikitopian/hardmode'
 
