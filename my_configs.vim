@@ -26,6 +26,8 @@ Plug 'junegunn/fzf.vim'
 " Disables arrow keys
 Plug 'wikitopian/hardmode'
 
+" highlight yanked text
+Plug 'machakann/vim-highlightedyank'
 " All of your Plugins must be added before the following line
 call plug#end()            " required
 filetype plugin indent on    " required
@@ -75,3 +77,6 @@ set foldmethod=syntax
 set foldnestmax=10
 set nofoldenable
 set foldlevel=2
+
+" set how long yanked text stays highlighted
+let g:highlightedyank_highlight_duration = 250
