@@ -66,12 +66,6 @@ let g:HardMode_hardmodeMsg = 'Don''t use this!'
 nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
 
 let g:coc_disable_startup_warning = 1
-" GoTo code navigation.
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
-
 " folding
 set foldmethod=syntax
 set foldnestmax=10
